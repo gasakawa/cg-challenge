@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
   display: flex;
+  justify-content: center;
 `;
 
 export const HeaderLogoContainer = styled.div`
@@ -9,8 +10,8 @@ export const HeaderLogoContainer = styled.div`
   padding: var(--padding-default);
 
   img {
-    width: 140px;
-    height: 40px;
+    width: 180px;
+    height: 80px;
   }
 `;
 

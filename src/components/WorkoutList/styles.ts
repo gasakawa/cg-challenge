@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const WorkoutListContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
-  justify-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 10px;
 `;

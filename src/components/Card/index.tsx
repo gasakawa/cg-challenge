@@ -22,6 +22,8 @@ const Card = ({ card }: CardProps) => {
         handleClick(card.id);
       }}
     >
+      <S.CardLevel>{card.levelTag}</S.CardLevel>
+      <S.CardImpactLevel>{card.impactTag} impact</S.CardImpactLevel>
       <h3>{card.title}</h3>
       <p>{card.description}</p>
     </S.CardContainer>
