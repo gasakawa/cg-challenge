@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const WorkoutDetailContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 `;
 
@@ -11,6 +10,11 @@ export const WorkoutDetailInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: var(--margin-md);
+
+  @media (max-width: 400px) {
+    margin-left: var(--margin-md);
+    margin-right: var(--margin-md);
+  }
 
   h1 {
     font-size: var(--font-lg);
