@@ -33,6 +33,8 @@ export const GlobalStyle = createGlobalStyle`
 
     --card-width-sm: 300px;
     --card-width-md: 500px;
+
+    --bgc-secondary: #333;
   }
 
 `;

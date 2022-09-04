@@ -10,7 +10,7 @@ export const CardContainer = styled.div<Props>`
   justify-content: center;
   background: linear-gradient(
       90deg,
-      rgba(200, 16, 46, 0.4) 25%,
+      rgba(200, 16, 46, 0.4) 35%,
       rgba(51, 51, 51, 0.3) 60%
     ),
     url(${props => props.thumbnail}) no-repeat left top;
@@ -19,9 +19,13 @@ export const CardContainer = styled.div<Props>`
   border-radius: 10px;
   padding: var(--padding-default);
   margin: var(--margin-default);
-  height: 500px;
+  height: 400px;
   background-color: #333;
   position: relative;
+
+  @media (max-width: 400px) {
+    height: 300px;
+  }
 
   &:hover {
     cursor: pointer;

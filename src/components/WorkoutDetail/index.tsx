@@ -41,7 +41,7 @@ const WorkoutDetail = ({ id }: WorkoutDetailProps) => {
         </S.WorkoutDetailLevel>
       </S.WorkoutDetailInfo>
       <S.WorkoutDetailVideo>
-        <video autoPlay>
+        <video controls poster={workout.thumbnail}>
           <source src={workout.media} type='video/mp4' />
         </video>
       </S.WorkoutDetailVideo>

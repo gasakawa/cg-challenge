@@ -31,6 +31,22 @@ export const WorkoutDetailVideo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 400px) {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: var(--padding-sm);
+    border-radius: 8px;
+  }
+
+  video {
+    width: 600px;
+    height: 600px;
+
+    @media (max-width: 400px) {
+      width: 350px;
+      height: 350px;
+    }
+  }
 `;
 
 export const WorkoutDetailLevel = styled.div`
