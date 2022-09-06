@@ -10,17 +10,7 @@ type WorkoutDetailProps = {
   id: string;
 };
 const WorkoutDetail = ({ id }: WorkoutDetailProps) => {
-  const [workout, setWorkout] = useState<Workout>(() => ({
-    description: '',
-    thumbnail: '',
-    levelTag: '',
-    media: '',
-    title: '',
-    impactTag: '',
-    id: '',
-    trainerId: '',
-    duration: 0,
-  }));
+  const [workout, setWorkout] = useState<Partial<Workout>>({});
 
   useEffect(() => {
     const findWorkout = workouts.find(work => work.id === id) as Workout;
