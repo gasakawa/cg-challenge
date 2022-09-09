@@ -5,6 +5,7 @@ import * as S from './styles';
 import workouts from '../../api/workout.json';
 import { Workout } from '../../types/workout';
 import { Link } from 'react-router-dom';
+import ReactPlayer from 'react-player';
 
 type WorkoutDetailProps = {
   id: string;
@@ -31,9 +32,7 @@ const WorkoutDetail = ({ id }: WorkoutDetailProps) => {
         </S.WorkoutDetailLevel>
       </S.WorkoutDetailInfo>
       <S.WorkoutDetailVideo>
-        <video controls poster={workout.thumbnail}>
-          <source src={workout.media} type='video/mp4' />
-        </video>
+        <video src={workout.media} controls poster={workout.thumbnail}></video>
       </S.WorkoutDetailVideo>
       <S.WorkoutDetailFooter>
         <Link to='/'>
