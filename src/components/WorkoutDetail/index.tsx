@@ -5,7 +5,6 @@ import * as S from './styles';
 import workouts from '../../api/workout.json';
 import { Workout } from '../../types/workout';
 import { Link } from 'react-router-dom';
-import ReactPlayer from 'react-player';
 
 type WorkoutDetailProps = {
   id: string;
